@@ -5,6 +5,7 @@ import Box from "@mui/material/Box";
 import React, { useState } from "react";
 import PersonRendered from "./components/PersonRendered";
 import SearchAndDelete from "./components/SearchAndDelete";
+import Assignment1 from "./components/Assigment1";
 
 function App() {
   const [persons, setPersons] = useState([
@@ -67,6 +68,8 @@ function App() {
       noValidate
       autoComplete="off"
     >
+      <Assignment1></Assignment1>
+
       <Add persons={persons} onAdd={onAdd}></Add>
       <SearchAndDelete
         persons={persons}
